@@ -10,4 +10,4 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(routeUser);
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
